@@ -135,7 +135,7 @@ const dummyVotingSections = [
   },
   {
     id: 2,
-    name: "Senate Election 2025",
+    name: "Provincial Election 2025",
     candidates: [
       { name: "David Brown", party: "Party X" },
       { name: "Eva Green", party: "Party Y" },
@@ -195,7 +195,7 @@ const UserVotingPage = () => {
       <div className="mb-6 flex items-center justify-start gap-4">
         <label className="font-semibold">Select Voting Section:</label>
         <select
-          className="bg-white/10 border border-white/30 rounded-lg px-4 py-2 text-white"
+          className="bg-white/10 border border-white/30 rounded-lg px-4 py-2 text-blue-500"
           value={selectedSection ? selectedSection.id : ""}
           onChange={(e) => {
             const section = votingSections.find(
